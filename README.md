@@ -17,20 +17,17 @@
 
 ## 使用方法
 
-### 直接运行
+### 运行
 
-下载 `WeChatRead.exe`，双击运行即可。
+构建产物在 `WeChatRead-win32-x64/` 目录，双击 `WeChatRead.exe` 即可运行。
+
+如需单个 exe 便携版，可将 `WeChatRead-win32-x64/` 目录内容用 Bandizip 或 7-Zip SFX 打包为自解压 exe。
 
 ### 从源码构建
 
 ```bash
-# 安装依赖
 npm install
-
-# 构建应用
 npm run build
-
-# 构建产物在 WeChatRead-win32-x64/ 目录
 ```
 
 ## 项目结构
