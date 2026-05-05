@@ -1,17 +1,14 @@
 {
-  "name": "weread",
+  "name": "weread-desktop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "WeChat Read desktop app built with Pake (Tauri + Rust)",
   "scripts": {
-    "build": "nativefier --name \"WeChatRead\" --icon \"icon.ico\" --inject \"inject/custom.js\" --platform windows --arch x64 --portable --single-instance --width 1280 --height 800 --maximize --title-bar-style hidden --lang \"zh-CN\" --app-copyright \"Copyright (C) Tencent\" --win32metadata \"{\\\"ProductName\\\":\\\"WeChatRead\\\",\\\"InternalName\\\":\\\"WeChatRead\\\",\\\"FileDescription\\\":\\\"WeChat Read Desktop\\\"}\" \"https://weread.qq.com/\" \".\" && node patch.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx pake \"https://weread.qq.com/\" --name \"WeChatRead\" --icon \"icon.ico\" --width 1280 --height 800 --hide-title-bar --inject \"inject/pake-custom.js\"",
+    "build:debug": "npx pake \"https://weread.qq.com/\" --name \"WeChatRead\" --icon \"icon.ico\" --width 1280 --height 800 --hide-title-bar --inject \"inject/pake-custom.js\" --debug"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": ["weread", "wechat-read", "desktop", "pake", "tauri"],
+  "license": "MIT",
   "devDependencies": {
-    "nativefier": "^52.0.0"
+    "pake-cli": "^3.11.4"
   }
 }
