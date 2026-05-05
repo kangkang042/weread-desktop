@@ -1,0 +1,17 @@
+{
+  "name": "weread",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nativefier --name \"WeChatRead\" --icon \"icon.ico\" --inject \"inject/custom.js\" --platform windows --arch x64 --portable --single-instance --width 1280 --height 800 --maximize --title-bar-style hidden --lang \"zh-CN\" --app-copyright \"Copyright (C) Tencent\" --win32metadata \"{\\\"ProductName\\\":\\\"WeChatRead\\\",\\\"InternalName\\\":\\\"WeChatRead\\\",\\\"FileDescription\\\":\\\"WeChat Read Desktop\\\"}\" \"https://weread.qq.com/\" \".\" && node patch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nativefier": "^52.0.0"
+  }
+}
