@@ -1,6 +1,6 @@
 # 微信读书桌面版
 
-基于 [Pake](https://github.com/tw93/Pake)（Tauri + WebView2）将[微信读书网页版](https://weread.qq.com/)打包为 Windows 桌面应用，仅 **8.8MB**。
+极简微信读书桌面客户端。基于 [Pake](https://github.com/tw93/Pake)（Tauri + WebView2）将[微信读书网页版](https://weread.qq.com/)打包为 Windows 桌面应用。
 
 ## 预览
 
@@ -25,15 +25,6 @@
 npm run build
 ```
 
-## 项目结构
-
-```
-├── WeChatRead.exe
-├── inject/
-│   └── pake-custom.js    # 注入脚本
-├── icon.ico
-└── package.json
-```
 
 ## 致谢
 
